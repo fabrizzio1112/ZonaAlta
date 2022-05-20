@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* MENU */
+header{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 620px;
+}
+
+.logo{
+  font-family: "Lobster", sans-serif;
+  width: auto;
+  margin-left: 20px;
+  font-size: 45px;
+}
+
+.logo a{
+  color: black;
+  text-decoration: none;
+}
+
+.menu{
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  color: black;
+  padding: 0 20px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.efect{
+  position: relative;
+}
+
+.efect::after{
+  content: "";
+  position: absolute;
+  background-color: #951B05;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.efect:hover{
+  color: #951B05;
+}
+
+.efect:hover::after{
+  width: 100%;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.imagen-fondo{
+  background-image: url(img/fondo10.jpg);
+  height: 100%;
+  min-height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* MENU. */
+
+/* FORMULARIO */
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/logo.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px)
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left{
+    height: 100%;
+    background: url(img/logo.jpg) no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+}
+
+h2{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
+/* FORMULARIO. */
+
+
+/* FOOTER */
+footer{
+  background-color: black;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: white;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-container p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14;
+}
+
+.footer-container h3{
+  font-family: "Lobster";
+  font-size: 30px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: white;
+}
+.socials a i{
+  font-size: 1.1rem;
+}
+
+.socials a:hover i{
+  color: skyblue;
+}
+
+.footer-bottom{
+  background-color: black;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+/* FOOTER. */

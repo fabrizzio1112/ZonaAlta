@@ -31,16 +31,14 @@ header{
 }
 
 .logo a{
-  color: white;
+  color: black;
   text-decoration: none;
-  -webkit-text-stroke: 0.4px black;
 }
 
 .menu{
   display: inline-block;
   text-align: center;
   margin-right: 25px;
-  
 }
 
 .menu li{
@@ -49,7 +47,7 @@ header{
 }
 
 .menu li a{
-  color: white;
+  color: black;
   padding: 0 20px;
   display: block;
   font-size: 14px;
@@ -63,7 +61,7 @@ header{
 .efect::after{
   content: "";
   position: absolute;
-  background-color: skyblue;
+  background-color: #951B05;
   height: 3px;
   width: 0%;
   left: 0;
@@ -72,7 +70,7 @@ header{
 }
 
 .efect:hover{
-  color: skyblue;
+  color: #951B05;
 }
 
 .efect:hover::after{
@@ -84,7 +82,7 @@ header{
 }
 
 .imagen-fondo{
-  background-image: url(../img/header-img.jpg);
+  background-image: url(img/fondo10.jpg);
   height: 100%;
   min-height: 700px;
   background-size: cover;
@@ -256,7 +254,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .socials li{
@@ -291,16 +289,5 @@ footer{
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
-}
-.footer-politica{
-  text-align: center;
-  margin-bottom: 10px;
-}
-.footer-politica a{
-  font-size: 16px;
-  color: white
-}
-.footer-politica a:hover{
-  text-decoration: underline
 }
 /* FOOTER. */
