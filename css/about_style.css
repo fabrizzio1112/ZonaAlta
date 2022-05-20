@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* MENU */
+header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 220px;
+}
+
+.logo{
+  font-family: "Lobster", sans-serif;
+  width: auto;
+  margin-left: 20px;
+  font-size: 45px;
+}
+
+.logo a{
+  color: white;
+  text-decoration: none;
+  -webkit-text-stroke: .3px black;
+}
+
+.menu{
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  color: white;
+  padding: 0 20px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.efect{
+  position: relative;
+}
+
+.efect::after{
+  content: "";
+  position: absolute;
+  background-color: skyblue;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.efect:hover{
+  color: skyblue;
+}
+
+.efect:hover::after{
+  width: 100%;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.imagen-fondo{
+  background-image: url(../img/header-img.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* MENU. */
+
+/* ABOUT */
+.about-empresa{
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.text1{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+.text2{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+.text3{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.contenedor-about{
+  width: 100%;
+  height: 400px;
+  padding-top: 40px;
+}
+.caja1{
+  width: 50%;
+  height: 400px;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.caja2{
+  width: 50%;
+  height: 400px;
+  float: right;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor-about h3{
+  text-align: center;
+  padding-bottom: 5px;
+  color: skyblue;
+  -webkit-text-stroke: .6px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ABOUT. */
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+  }
+  
+  .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14;
+  }
+  
+  .footer-container h3{
+    font-family: "Lobster";
+    font-size: 30px;
+  }
+  
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+  }
+  
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: white;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+  }
+  
+  .socials a:hover i{
+    color: skyblue;
+  }
+  
+  .footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+  .footer-politica{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-politica a{
+    font-size: 16px;
+    color: white
+  }
+  .footer-politica a:hover{
+    text-decoration: underline
+  }
+  /* FOOTER. */ 
