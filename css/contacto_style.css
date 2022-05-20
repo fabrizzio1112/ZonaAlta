@@ -115,7 +115,7 @@ header{
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid skyblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: white;
@@ -136,7 +136,7 @@ header{
     }
     .form-register .botons{
         width: 100%;
-        background: #1f53c5;
+        background: #5BC3FF;
         border: none;
         padding: 12px;
         color: white;
@@ -182,7 +182,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
   }
   
   .socials li{
@@ -217,6 +217,17 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+  }
+  .footer-politica{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-politica a{
+    font-size: 16px;
+    color: white
+  }
+  .footer-politica a:hover{
+    text-decoration: underline
   }
   /* FOOTER. */
   
