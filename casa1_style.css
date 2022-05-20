@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* MENU */
+header{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 220px;
+}
+
+.logo{
+  font-family: "Lobster", sans-serif;
+  width: auto;
+  margin-left: 20px;
+  font-size: 45px;
+}
+
+.logo a{
+  color: black;
+  text-decoration: none;
+}
+
+.menu{
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  color: black;
+  padding: 0 20px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.efect{
+  position: relative;
+}
+
+.efect::after{
+  content: "";
+  position: absolute;
+  background-color: #951B05;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.efect:hover{
+  color: #951B05;
+}
+
+.efect:hover::after{
+  width: 100%;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.imagen-fondo{
+  background-image: url(img/fondo10.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* MENU. */
+
+/* CARRUSEL */
+.section{
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    justify-content: left;
+    align-items: left;
+}
+.slider{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 400%;
+    height: 400px;
+    justify-content: left;
+    align-items: left;
+
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 800px;
+    height: 500px;
+
+}
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: white;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20;
+}
+#radio3:checked~.first{
+    margin-left: -40;
+}
+#radio4:checked~.first{
+    margin-left: -60;
+}
+
+/* CARRUSEL */
+
+/* TEXTO */
+.nombre-casa{
+    text-align: right;
+    font-size: 32px;
+    font-weight: bolder;
+}
+/* TEXTO */
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+  }
+  
+  .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14;
+  }
+  
+  .footer-container h3{
+    font-family: "Lobster";
+    font-size: 30px;
+  }
+  
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: white;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+  }
+  
+  .socials a:hover i{
+    color: skyblue;
+  }
+  
+  .footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+  /* FOOTER. */
