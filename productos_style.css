@@ -1,0 +1,23 @@
+.efect{
+    position: relative;
+}
+
+.efect::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: -10px;
+    background-color: white;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.efect:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 10px;
+    background-color: white;
+    display: block;
+    transition: .5 ease-in-out;
+}
