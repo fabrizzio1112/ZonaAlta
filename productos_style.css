@@ -31,9 +31,8 @@ header{
 }
 
 .logo a{
-  color: white;
+  color: black;
   text-decoration: none;
-  -webkit-text-stroke: 0.4px black;
 }
 
 .menu{
@@ -48,7 +47,7 @@ header{
 }
 
 .menu li a{
-  color: white;
+  color: black;
   padding: 0 20px;
   display: block;
   font-size: 14px;
@@ -62,7 +61,7 @@ header{
 .efect::after{
   content: "";
   position: absolute;
-  background-color: skyblue;
+  background-color: #951B05;
   height: 3px;
   width: 0%;
   left: 0;
@@ -71,7 +70,7 @@ header{
 }
 
 .efect:hover{
-  color: skyblue;
+  color: #951B05;
 }
 
 .efect:hover::after{
@@ -83,7 +82,7 @@ header{
 }
 
 .imagen-fondo{
-  background-image: url(../img/header-img.jpg);
+  background-image: url(img/fondo10.jpg);
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -165,12 +164,10 @@ h1::after{
 }
 .contenido a{
   text-decoration: none;
-  color: skyblue;
-  -webkit-text-stroke: .3px black;
-
+  color: #bd0021;
 }
 .nombre-producto{
-    color: skyblue;
+    color: #bd0021;
     font-weight: 600;
     max-width: max-content;
     border-radius: 3px;
